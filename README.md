@@ -2,7 +2,7 @@
 Exploratory Data Analysis on forecasting global food security indicators: A comprehensive study using Multiple Linear Regression on Consumer Price Index against numerous economic factors of influence. 
 
 # Problem Statement
-How might we predict the impact of various socio-economic indicators and geopolitical conflicts on food price index variations across different countries?
+> How might we predict the impact of various socio-economic indicators and geopolitical conflicts on food price index variations across different countries?
 
 # Quantitative Indicators
 1. Consumer Price Index

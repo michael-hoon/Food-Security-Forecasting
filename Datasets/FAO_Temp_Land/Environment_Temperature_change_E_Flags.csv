@@ -1,0 +1,4 @@
+Flag,Description
+E,Estimated value
+M,Missing value (data cannot exist; not applicable)
+O,Missing value

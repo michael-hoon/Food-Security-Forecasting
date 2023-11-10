@@ -1,0 +1,10 @@
+flask
+flask-login
+flask-migrate
+flask-sqlalchemy
+flask-wtf
+transcrypt
+bootstrap-flask
+importlib-resources
+colorama
+Werkzeug==2.3.0

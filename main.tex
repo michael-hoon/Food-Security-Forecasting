@@ -1,0 +1,136 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{Mic}
+\usepackage[title,titletoc]{appendix}
+
+\geometry
+{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+}
+
+\title{\Bigg01.020 Design Thinking Project III (DDW) \\ Towards Zero Hunger: \\ A Cross-Country Analysis of Factors Affecting Food Security}
+
+\author{Cohort 08 Group 04}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  ID & Name & ID & Name \\
+ \hline
+  1006617 & Michael Hoon Yong Hau & 1006954 & Joshua John Lee Shi Kai \\
+ \hline
+  1006651 & Wong Qi Yuan Kenneth & 1007085 & Yaromir Viswanathan \\
+ \hline
+\end{tabular}
+\end{center} 
+
+%\section*{Contributions}
+
+%\begin{itemize}
+%    \item Michael Hoon Yong Hau:
+%    \item Joshua John Lee Shi Kai:
+%    \item Wong Qi Yuan Kenneth:
+%    \item Yaromir Viswanathan: 
+%\end{itemize}
+
+\tableofcontents
+
+\newpage
+\setcounter{page}{1}
+
+\section{Introduction} 
+The world faces an unprecedented challenge — to feed a projected population of 9 billion by 2050 while ensuring safe, sustainable, and equitable food systems. This imperative is not only a matter of meeting the demands of a growing population but is deeply rooted in the fundamental right of every individual to access safe, nutritious, and sufficient food. As underscored by the United Nations (UN) Sustainable Development Goal 2: Zero Hunger, the eradication of hunger is not merely an aspiration; it is a moral imperative, a global commitment to securing the well-being of present and future generations. \\
+
+\noindent Amidst this backdrop, our research embarks on a journey to conduct a rigorous cross-country analysis, delving into the intricate web of factors that influence food security on a global scale. By adopting a multidimensional approach, we seek to unravel the complexities of the challenges posed by diverse socio-economic, environmental, cultural, and geopolitical contexts. Our ultimate objective is to contribute to the realization of the UN's vision of a world where no one suffers from hunger — a world where food security is a universal reality. \\ 
+
+\noindent We investigate the extent of climate/economic shocks (\url{https://scholarworks.uvm.edu/cgi/viewcontent.cgi?article=1129&context=calsfac}) against food insecurity among 30 countries in the world, and have found that 
+
+\section{Methodology}
+
+\subsection{Data Collection}
+Most of our data is obtained from reputable sources such as the FAO and World Bank Group. Some of the datasets we have found to be useful are 
+
+\subsection{Data Wrangling}
+To prepare the raw datasets into cleaned, usable information, we applied several data cleaning techniques, such as normalisation and imputation.
+
+\section{Gauss-Markov Assumptions}
+Since we would like to employ a multiple linear regression on our dataset, we need to satisfy the Gauss-Markov theorem to ensure that our estimators are unbiased, efficient, and have minimum variance.
+
+\subsection{Linearity of Data}
+
+\subsection{Normality of Residuals}
+We employ the Kolmogorov-Smirnov test for normality of residuals using our data, (Or visualising using a Q-Q plot of the residuals)  
+
+\subsection{Independence of Errors}
+To test for independence of the residuals, we employ a Durbin-Watson Test 
+
+\subsection{Heteroskedasticity Analysis}
+To test for Homoskedasticity, we can employ a White Test. Visualising the plots of our data, we obtain the \textbf{Skewness} and \textbf{Kurtosis} values: 
+
+\subsection{Multicollinearity Considerations}
+To test for multicollinearity, we can use the Variance Inflation Factor (VIF). High VIF values (typically above 10) indicate potential multicollinearity.
+
+\subsection{Endogeneity}
+
+\section{Multiple Linear Regression Model}
+
+Our Multiple Linear Regression Equation is as follows: 
+
+\begin{equation}
+    y = ax_1 + bx_2 + cx_3
+\end{equation}
+
+\subsection{Hypothesis Testing}
+We can conduct an F-test 
+
+\subsection{Statistical Significance}
+From the p-values obtained, we can conclude that 
+
+\section{Descriptive Statistics}
+
+\subsection{Adjusted $\mathbb{R}^2$}
+
+\subsection{Bayesian Information Criterion (BIC)}
+
+\section{Model Improvements}
+
+\subsection{Feature Engineering}
+Create new features or transform existing ones to better capture relationships with the dependent variable.
+\subsubsection{Polynomial Terms}
+\subsubsection{Interactive Terms}
+\subsubsection{Ridge/Lasso Regularization}
+
+\subsection{Instrumental Variable Regression}
+
+\subsubsection{Omitted Variable Bias and Endogeneity}
+
+\section{Conclusion}
+
+\newpage
+\clearpage
+\pagenumbering{roman}
+\begin{appendices}
+
+\section{Data Visualisation}
+
+\section{Kolmogorov-Smirnov Test}
+
+\section{Q-Q Plot of Error Terms}
+
+\end{appendices}
+
+\newpage
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}

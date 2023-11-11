@@ -1,10 +1,11 @@
 # Install guide for webappp
 
 ## Requirements
+- cloned repo
 - `python3`
 
 ## Steps for Linux/MacOS Users
-1. Downloading requirements (assuming you have cloned the repo already)
+1. Downloading requirements
 ```sh
 ./setup.sh
 ```
@@ -15,7 +16,7 @@
 
 ## Steps for Windows Users
 
-1. Downloading requirements (assuming you have cloned the repo already)
+1. Downloading requirements
 ```sh
 python -m venv .venv
 python -m pip install -r requirements.txt

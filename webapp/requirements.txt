@@ -12,3 +12,4 @@ Werkzeug==2.3.0
 dash
 pandas
 plotly
+openpyxl

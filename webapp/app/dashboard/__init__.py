@@ -38,7 +38,7 @@ def init_dashboard(app: Flask):
     dash_module.layout = html.Div(
         children=[
             dcc.Graph(
-                id="histogram-graph",
+                id="scatter-graph",
                 figure=fig,
             ),
             create_data_table(df),

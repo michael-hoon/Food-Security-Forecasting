@@ -11,7 +11,7 @@ class Config:
     ENVIRONMENT = environ.get("ENVIRONMENT")
     FLASK_APP = "main.py"
     FLASK_DEBUG = environ.get("FLASK_DEBUG")
-    SECRET_KEY = environ.get("SECRET_KEY")
+    SECRET_KEY = environ.get("SECRET_KEY") or 'very-secret-key'
 
     # Assets
     LESS_BIN = environ.get("LESS_BIN")
@@ -19,6 +19,6 @@ class Config:
     LESS_RUN_IN_DEBUG = environ.get("LESS_RUN_IN_DEBUG")
 
     # Static Assets
-    STATIC_FOLDER = "static"
-    TEMPLATES_FOLDER = "templates"
+    STATIC_FOLDER = "app/static"
+    TEMPLATES_FOLDER = "app/templates"
     COMPRESSOR_DEBUG = environ.get("COMPRESSOR_DEBUG")

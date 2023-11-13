@@ -1,7 +1,8 @@
 from app import init_app
-
+from flask_bootstrap import Bootstrap5
 
 app = init_app()
+bootstrap = Bootstrap5(app)
 
 
 if __name__ == "__main__":

@@ -1,12 +1,13 @@
 {% extends "layout.jinja2" %}
+{% import "bootstrap5/form.html" as wtf %}
 
 {% block content %}
 <div class="card">
-{% comment %}
-  <img src="{{ url_for('static', filename='img/logo@2x.png') }}" class="logo" />
-{% endcomment %}
   <h1 class="site-title">{{ title }}</h1>
   <p class="subtitle">Welcome to the Food-Security-Predictor-inator! (Realistic results may vary)</p>
+  <div class = "row">
+    {{wtf.render_form(form)}}
+  </div>
   <a href="/dashapp/" class="dash-link">
     <span>Visualize!</span>
     <i class="fas fa-arrow-right"></i>

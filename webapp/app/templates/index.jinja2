@@ -2,11 +2,13 @@
 
 {% block content %}
 <div class="card">
+{% comment %}
   <img src="{{ url_for('static', filename='img/logo@2x.png') }}" class="logo" />
+{% endcomment %}
   <h1 class="site-title">{{ title }}</h1>
   <p class="subtitle">Welcome to the Food-Security-Predictor-inator! (Realistic results may vary)</p>
   <a href="/dashapp/" class="dash-link">
-    <span>Embedded Plotly Dash</span>
+    <span>Visualize!</span>
     <i class="fas fa-arrow-right"></i>
   </a>
 </div>

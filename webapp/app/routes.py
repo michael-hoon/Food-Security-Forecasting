@@ -9,7 +9,6 @@ def home():
     '''landing page'''
     form = SelectInputOutput()
     if form.validate_on_submit():
-        model.predictors = form.input.data
         model.country = form.output.data
         flash('Settings Applied')
         return render_template(

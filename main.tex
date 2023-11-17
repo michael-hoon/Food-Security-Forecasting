@@ -11,7 +11,7 @@
  top=20mm,
 }
 
-\title{\Bigg01.020 Design Thinking Project III (DDW) \\ Towards Zero Hunger: \\ A Cross-Country Analysis of Factors Affecting Food Security}
+\title{\Bigg01.020 Design Thinking Project III (MU) \\ Towards Zero Hunger: \\ A Cross-Country Analysis of Factors Affecting Food Insecurity}
 
 \author{Cohort 08 Group 04}
 
@@ -49,19 +49,21 @@
 \setcounter{page}{1}
 
 \section{Introduction} 
-The world faces an unprecedented challenge — to feed a projected population of 9 billion by 2050 while ensuring safe, sustainable, and equitable food systems. This imperative is not only a matter of meeting the demands of a growing population but is deeply rooted in the fundamental right of every individual to access safe, nutritious, and sufficient food. As underscored by the United Nations (UN) Sustainable Development Goal 2: Zero Hunger, the eradication of hunger is not merely an aspiration; it is a moral imperative, a global commitment to securing the well-being of present and future generations. \\
+The world faces an unprecedented challenge — to feed a projected population of 9 billion by 2050 while ensuring safe, sustainable, and equitable food systems \cite{doi:10.1126/science.1185383}. This imperative is not only a matter of meeting the demands of a growing population but is deeply rooted in the fundamental right of every individual to access safe, nutritious, and sufficient food, as underscored United Nations (UN) Sustainable Development Goal 2: Zero Hunger \cite{unsdg2}. \\
 
-\noindent Amidst this backdrop, our research embarks on a journey to conduct a rigorous cross-country analysis, delving into the intricate web of factors that influence food security on a global scale. By adopting a multidimensional approach, we seek to unravel the complexities of the challenges posed by diverse socio-economic, environmental, cultural, and geopolitical contexts. Our ultimate objective is to contribute to the realization of the UN's vision of a world where no one suffers from hunger — a world where food security is a universal reality. \\ 
+\noindent In light of this, our project aims to conduct a rigorous cross-country analysis, investigating the intricate factors that influence food insecurity on a global scale. Our problem statement is as follows: 
 
-\noindent We investigate the extent of climate/economic shocks (\url{https://scholarworks.uvm.edu/cgi/viewcontent.cgi?article=1129&context=calsfac}) against food insecurity among 30 countries in the world, and have found that 
+\begin{formal}
+    "How might we identify the key factors of influence for food insecurity index across countries, to facilitate informed and targeted governmental policy interventions?"
+\end{formal}
 
-\section{Methodology}
+\noindent As such, our main target audience for this project is governmental organisations involved in policy-making for their country's food security. This ensures relevant insights to formulate effective policies and interventions addressing food security issues based on specific socioeconomic indicators.
 
-\subsection{Data Collection}
-Most of our data is obtained from reputable sources such as the FAO and World Bank Group. Some of the datasets we have found to be useful are 
+\section{Data Collection and Wrangling}
+Most of our data is obtained from reputable sources such as the \Food and Agricultural Organisation of the United Nations (FAO) and the World Bank Group. Some of the datasets we have found to be useful are 
 
-\subsection{Data Wrangling}
-To prepare the raw datasets into cleaned, usable information, we applied several data cleaning techniques, such as normalisation and imputation.
+\subsection{Normalisation and Imputation}
+To prepare the raw datasets into cleaned, usable information, we applied several data cleaning techniques, such as normalisation and imputation. For normalisation in Excel, we used the built-in \verb|=STANDARDISE()| function, which applies z-score normalisation on each row value. As for data imputation, we applied Mean-Imputation (MI) to replace the missing data values in our dataset. 
 
 \section{Gauss-Markov Assumptions}
 Since we would like to employ a multiple linear regression on our dataset, we need to satisfy the Gauss-Markov theorem to ensure that our estimators are unbiased, efficient, and have minimum variance.
@@ -87,14 +89,49 @@ To test for multicollinearity, we can use the Variance Inflation Factor (VIF). H
 Our Multiple Linear Regression Equation is as follows: 
 
 \begin{equation}
-    y = ax_1 + bx_2 + cx_3
+    \begin{aligned}
+        \mathbf{FII} = \alpha & + \beta_1\mathbf{Time} + \beta_2\mathbf{Time} + \beta_3\mathbf{Time} + \beta_4\mathbf{Time} + \beta_5\mathbf{Time} \\ 
+        & + \beta_6\mathbf{Time} + \beta_7\mathbf{Time} + \beta_8\mathbf{Time} + \beta_9\mathbf{Time} + \beta_10\mathbf{Time} \\
+        & + \beta_{11}\mathbf{Time} + \beta_{12}\mathbf{Time} + \beta_{13}\mathbf{Time} + \beta_{14}\mathbf{Time} + \beta_{15}\mathbf{Time}
+    \end{aligned}
 \end{equation}
 
-\subsection{Hypothesis Testing}
-We can conduct an F-test 
+\subsection{OLS Parameter Estimates}
+Some descriptive statistics of our table are given in Table \ref{descriptivestats}. Significance levels are indicated with stars below the table. 
 
-\subsection{Statistical Significance}
-From the p-values obtained, we can conclude that 
+\begin{table}[H]
+    \centering
+        \begin{threeparttable}
+            \begin{tabular}{l l l l l}
+              \toprule & \textbf{Estimate} & \textbf{Std. Error} & \textbf{t-statistic} & \textbf{p-value} \\ \midrule
+            \textbf{$\alpha$} & 54.32765 & 8.65118 & 6.2800 & $\num{4.61e-09}$ $***$ \\ 
+            \textbf{$\beta_1$ Time} & 2.66033 & 0.05297 & 50.225 & 0.00000 $***$ \\ 
+            \textbf{$\beta_2$ Jan} & 9.18029 & 10.76506 & 0.8530 & 0.39533  \\ 
+            \textbf{$\beta_3$ Feb} & -0.23004 & 10.76232 & -0.021 & 0.98298 \\ 
+            \textbf{$\beta_4$ Mar} & 32.27630 & 10.75985 & 3.0000 & 0.00324 $***$ \\ 
+            \textbf{$\beta_5$ Apr} & 26.53263 & 10.75763 & 2.4660 & 0.01494 $**$ \\ 
+            \textbf{$\beta_6$ May} & 28.62230 & 10.75567 & 2.6610 & 0.00876 $***$ \\ 
+            \textbf{$\beta_7$ Jun} & 65.79531 & 10.75398 & 6.1180 & $\num{1.02e-08}$ $***$ \\ 
+            \textbf{$\beta_8$ Jul} & 102.80165 & 10.75254 & 9.5610 & 0.00000 $***$ \\ 
+            \textbf{$\beta_9$ Aug} & 99.89132 & 10.75137 & 9.2910 & 0.00000 $***$ \\ 
+            \textbf{$\beta_{10}$ Sep} & 48.56432 & 10.75046 & 4.5170 & $\num{1.38e-05}$ $***$ \\ 
+            \textbf{$\beta_{11}$ Oct} & 10.07066 & 10.74980 & 0.9370 & 0.35057 \\ 
+            \textbf{$\beta_{12}$ Nov} & -26.33967 & 10.74941 & -2.450 & 0.01559 $**$\\ \bottomrule
+            \end{tabular}
+            \begin{tablenotes}
+                \small
+                \item *** $p < 0.01$, ** $p < 0.05$, * $p < 0.1$
+            \end{tablenotes}
+        \end{threeparttable}
+    \caption{\label{descriptivestats}Multiple Linear Regression Model Descriptive Statistics}
+\end{table}
+
+\subsubsection{Individual Statistical Significance}
+From the \textit{p-values} obtained, we can conclude that 
+
+\subsubsection{Significance Test for Equation}
+
+\subsection{Spurious Relationships}
 
 \section{Descriptive Statistics}
 
@@ -113,6 +150,9 @@ Create new features or transform existing ones to better capture relationships w
 \subsection{Instrumental Variable Regression}
 
 \subsubsection{Omitted Variable Bias and Endogeneity}
+
+\section{Limitation of Analysis}\label{limitations}
+There are certain limitations of this project which we must acknowledge, for a comprehensive analysis of the suggested outcomes. 
 
 \section{Conclusion}
 

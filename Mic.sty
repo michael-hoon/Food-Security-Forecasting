@@ -5,13 +5,42 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage{doi} % hyperlink URLs
+\usepackage{hyperref}
 \usepackage{amsfonts, amsmath, amsthm, amssymb, bm}
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\mean}{mean} 
 \DeclareMathOperator*{\stddev}{std-dev} 
 \usepackage{siunitx}
+\sisetup{output-exponent-marker=\ensuremath{\mathrm{e}}}
 \usepackage{geometry}
 \usepackage{bm}
 \usepackage{caption}
 \usepackage{subcaption}
 % \usepackage{subfig}
+\usepackage{booktabs}
+\usepackage[flushleft]{threeparttable}
+
+% for adjustwidth environment
+\usepackage[strict]{changepage}
+
+% for formal definitions
+\usepackage{framed}
+
+% environment derived from framed.sty: see leftbar environment definition
+\definecolor{formalshade}{rgb}{0.95,0.95,1}
+
+\newenvironment{formal}{%
+  \def\FrameCommand{%
+    \hspace{1pt}%
+    {\color{darkblue}\vrule width 2pt}%
+    {\color{formalshade}\vrule width 4pt}%
+    \colorbox{formalshade}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent\hspace{-4.55pt}% disable indenting first paragraph
+  \begin{adjustwidth}{}{7pt}%
+  \vspace{2pt}\vspace{2pt}%
+}
+{%
+  \vspace{2pt}\end{adjustwidth}\endMakeFramed%
+}

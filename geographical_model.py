@@ -32,6 +32,7 @@ print(df_imp.columns, df.columns)
 df_imp.columns = df.iloc[:,1:].columns
 df_imp["Country"] = df.loc[:, ["Country"]]
 print(df_imp)
+#df_imp.to_csv("imputated_data.csv", mode = 'w')
 print("Imputed!")
 
 df_country_name = df_imp["Country"]

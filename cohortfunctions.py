@@ -17,17 +17,19 @@ def get_features_targets(df, feature_names, target_names):
     return df_feature, df_target
 
 def prepare_feature(df_feature):
+    x = df_feature.copy()
     if isinstance(df_feature, pd.DataFrame):
-        x = df_feature.to_numpy()
+        x = x.to_numpy()
     else:
-        x = df_feature
+        x = x
     x.T
     x1 = np.insert(x, 0, 1, axis=1)
     return x1
 
 def prepare_target(df_target):
+    x = df_target.copy()
     if isinstance(df_target, pd.DataFrame):
-        x = df_target.to_numpy()
+        x = x.to_numpy()
     else:
         x = df_target
     x.T

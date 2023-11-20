@@ -1,4 +1,5 @@
 """Flask config."""
+import os
 from os import environ, path
 
 BASE_DIR = path.abspath(path.dirname(__file__))
@@ -22,3 +23,7 @@ class Config:
     STATIC_FOLDER = "app/static"
     TEMPLATES_FOLDER = "app/templates"
     COMPRESSOR_DEBUG = environ.get("COMPRESSOR_DEBUG")
+
+    #SQL
+    #SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or 'sqlite:///' + os.path.join(BASE_DIR, 'app.db')
+    #SQLALCHEMY_TRACK_MODIFICATIONS = False

@@ -1,5 +1,14 @@
 {% extends "layout.jinja2" %}
 {% import "bootstrap5/form.html" as wtf %}
+  {% block head %}
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {% block styles %}
+    <!-- Bootstrap CSS -->
+    {{ bootstrap.load_css() }}
+  {% endblock %}
 
 {% block content %}
 <div class="card">

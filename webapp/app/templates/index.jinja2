@@ -1,0 +1,25 @@
+{% extends "layout.jinja2" %}
+{% import "bootstrap5/form.html" as wtf %}
+{% block styles %}
+  <!-- Bootstrap CSS -->
+  {{ bootstrap.load_css() }}
+{% endblock %}
+
+{% block content %}
+<div class="card">
+  <h1 class="site-title">{{ title }}</h1>
+  <p class="subtitle">Welcome to the Food-Insecurity-Predictor-inator! (Realistic results may vary)</p>
+  <div class = "row">
+    <div class = "form">
+      {{wtf.render_form(form)}}
+    </div>
+  </div>
+  <div class = "row">
+  {{predicted_val}}
+  </div>
+  <a href="/dashapp/" class="dash-link">
+    <span>Compute!</span>
+    <i class="fas fa-arrow-right"></i>
+  </a>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+flask
+flask-login
+flask-migrate
+flask-sqlalchemy
+flask-wtf
+flask-assets
+transcrypt
+bootstrap-flask
+importlib-resources
+colorama
+Werkzeug==2.3.0
+dash
+pandas
+plotly
+openpyxl
+scikit-learn

@@ -13,3 +13,4 @@ dash
 pandas
 plotly
 openpyxl
+scikit-learn

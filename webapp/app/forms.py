@@ -11,4 +11,4 @@ class InputVariables(FlaskForm):
     hdi = StringField('Human Development Index', validators=[DataRequired()])
     gini_index = StringField("Gini's Index", validators=[DataRequired()])
     temperature = StringField('Temperature', validators=[DataRequired()])
-    submit = SubmitField('Apply Parameters')
+    submit = SubmitField('Calculate Food Insecurity')

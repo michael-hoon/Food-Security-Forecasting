@@ -25,7 +25,7 @@ def home():
         flash('Settings Applied')
         return render_template(
             'index.jinja2',
-            title = 'FSP-inator by the JKYM Group',
+            title = 'FIP-inator by the JKYM Group',
             description='Discover poverty all around the world!',
             template = 'home-template',
             body="",
@@ -34,7 +34,7 @@ def home():
         )
     return render_template(
         'index.jinja2',
-        title = 'FSP-inator by the JKYM Group',
+        title = 'FIP-inator by the JKYM Group',
         description='Discover poverty all around the world!',
         template = 'home-template',
         body="",

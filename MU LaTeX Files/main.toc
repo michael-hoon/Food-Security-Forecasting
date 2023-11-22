@@ -31,6 +31,6 @@
 \contentsline {subsection}{\numberline {7.3}Endogeneity Concerns}{5}{subsection.7.3}%
 \contentsline {section}{\numberline {8}Conclusion}{5}{section.8}%
 \contentsline {section}{Appendix \numberline {A}Data Visualisation}{i}{appendix.a.A}%
-\contentsline {section}{Appendix \numberline {B}OLS Parameter Estimates for Each Model}{iii}{appendix.a.B}%
-\contentsline {section}{Appendix \numberline {C}Inferential Statistics of Models}{iv}{appendix.a.C}%
-\contentsline {section}{Appendix \numberline {D}Correlation Matrix of Final Model}{v}{appendix.a.D}%
+\contentsline {section}{Appendix \numberline {B}OLS Parameter Estimates for Each Model}{v}{appendix.a.B}%
+\contentsline {section}{Appendix \numberline {C}Inferential Statistics of Models}{vi}{appendix.a.C}%
+\contentsline {section}{Appendix \numberline {D}Correlation Matrix of Final Model}{vi}{appendix.a.D}%

@@ -1,0 +1,88 @@
+\begin{thebibliography}{10}
+
+\bibitem{AICBIC}
+Ken Aho, DeWayne Derryberry, and Teri Peterson.
+\newblock Model selection for ecologists: the worldviews of aic and bic.
+\newblock {\em Ecology}, 95(3):631--636, 2014.
+
+\bibitem{HACestimator}
+Donald W.~K. Andrews.
+\newblock Heteroskedasticity and autocorrelation consistent covariance matrix estimation.
+\newblock {\em Econometrica}, 59(3):817--858, 1991.
+
+\bibitem{MeanImputation}
+Dhanya~Pramod Anil~Jadhav and Krishnan Ramanathan.
+\newblock Comparison of performance of data imputation methods for numeric dataset.
+\newblock {\em Applied Artificial Intelligence}, 33(10):913--933, 2019.
+
+\bibitem{DGP}
+Masanao Aoki.
+\newblock {\em Data Generating Processes}, pages 8--20.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1990.
+
+\bibitem{GLS}
+Badi~H. Baltagi.
+\newblock {\em Generalized Least Squares}, pages 237--251.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 1998.
+
+\bibitem{OVB}
+John~R. Busenbark, Hyunjung~(Elle) Yoon, Daniel~L. Gamache, and Michael~C. Withers.
+\newblock Omitted variable bias: Examining management research with the impact threshold of a confounding variable (itcv).
+\newblock {\em Journal of Management}, 48(1):17--48, 2022.
+
+\bibitem{doi:10.1126/science.1185383}
+H.~Charles~J. Godfray, John~R. Beddington, Ian~R. Crute, Lawrence Haddad, David Lawrence, James~F. Muir, Jules Pretty, Sherman Robinson, Sandy~M. Thomas, and Camilla Toulmin.
+\newblock Food security: The challenge of feeding 9 billion people.
+\newblock {\em Science}, 327(5967):812--818, 2010.
+
+\bibitem{Greene2003Econometric}
+William~H. Greene.
+\newblock {\em Econometric Analysis}.
+\newblock Pearson Education, fifth edition, 2003.
+
+\bibitem{endogeneity}
+Aaron~D. Hill, Scott~G. Johnson, Lindsey~M. Greco, Ernest~H. O’Boyle, and Sheryl~L. Walter.
+\newblock Endogeneity: A review and agenda for the methodology-practice divide affecting micro and macro research.
+\newblock {\em Journal of Management}, 47(1):105--143, 2021.
+
+\bibitem{James2013}
+Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani.
+\newblock {\em An Introduction to Statistical Learning: with Applications in R}.
+\newblock Springer, 2013.
+
+\bibitem{IVREG}
+Michael Keane and Timothy Neal.
+\newblock Instrument strength in iv estimation and inference: A guide to theory and practice.
+\newblock {\em Journal of Econometrics}, 235(2):1625--1653, 2023.
+
+\bibitem{2SLS}
+Roberto~S. Mariano.
+\newblock {\em Two-Stage Least Squares}, pages 1616--1618.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2011.
+
+\bibitem{adjsutedrsquared}
+Jeremy Miles.
+\newblock {\em R Squared, Adjusted R Squared}.
+\newblock John Wiley & Sons, Ltd, 2014.
+
+\bibitem{scikit-learn}
+F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel, M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos, D.~Cournapeau, M.~Brucher, M.~Perrot, and E.~Duchesnay.
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830, 2011.
+
+\bibitem{heteroskedasticity}
+M.~Hashem Pesaran.
+\newblock {83Heteroskedasticity}.
+\newblock In {\em {Time Series and Panel Data Econometrics}}. Oxford University Press, 10 2015.
+
+\bibitem{GaussMarkov}
+Juliet~Popper Shaffer.
+\newblock The gauss-markov theorem and random regressors.
+\newblock {\em The American Statistician}, 45(4):269--273, 1991.
+
+\bibitem{unsdg2}
+{United Nations}.
+\newblock Goal 2: Zero hunger, 2023.
+\newblock Retrieved from: \url{https://www.un.org/sustainabledevelopment/hunger/}.
+
+\end{thebibliography}

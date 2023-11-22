@@ -22,7 +22,7 @@ Exploratory Data Analysis on Global food security indicators: A comprehensive st
 2. [Food and Agriculture Organisation](https://www.fao.org/faostat/en/)
 3. [Kaggle](https://www.kaggle.com/datasets)
 
-# Install guide for Online Web Application
+# :computer: Install guide for Online Web Application
 Aside from our Jupyter Notebook, we have also developed a user-friendly web-application for all governmental organisations around the world to use, and to determine the most significant factors of influence for Food Insecurity Index for their country. 
 
 Our application is built on Flask with Jinja Templating.

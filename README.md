@@ -28,7 +28,7 @@ Aside from our Jupyter Notebook, we have also developed a user-friendly web-appl
 Our application is built on Flask with Jinja Templating.
 
 ## Requirements
-- cloned repo
+- Cloned Repository using `git clone https://github.com/michael-hoon/Food-Security-Forecasting.git`
 - `python3`
 - Dependencies in `requirements.txt`
 

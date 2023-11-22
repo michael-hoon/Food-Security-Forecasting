@@ -44,5 +44,5 @@ def home():
 @app.route('/data', methods = ['GET'])
 def data():
     return render_template(
-        'my_report.html'
+        'final_report.html'
     )

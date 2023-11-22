@@ -32,7 +32,7 @@ def init_dashboard(app: Flask):
     dash_module.index_string = html_layout
     
     #create graph
-    fig = px.scatter_matrix(df, dimensions = ["Population", "GDP", "Infant mortality"])
+    fig = px.scatter_matrix(df, dimensions = ['Population', 'Infant mortality', 'temperature', "Gini's index", 'Human Development Index (2021)'])
 
     # Create Layout
     dash_module.layout = html.Div(

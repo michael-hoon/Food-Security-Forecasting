@@ -9,17 +9,26 @@
 <div class="card">
   <h1 class="site-title">{{ title }}</h1>
   <p class="subtitle">Welcome to the Food-Insecurity-Predictor-inator! (Realistic results may vary)</p>
+  <div>
+    <a href ="/data" class = "link">
+      <span>More info on our data used to train the model</span>
+    </a>
+  </div>
+
   <div class = "row">
     <div class = "form">
       {{wtf.render_form(form)}}
     </div>
   </div>
   <div class = "row">
-  {{predicted_val}}
+  <p>Food Insecurity Index prediction (Lower is Better): {{predicted_val}}%</p>
+  </div>
+  <div>
+   <img src="static/images/weights.png" alt="Indicator Weights" width="900" height="600">
   </div>
   <a href="/dashapp/" class="dash-link">
-    <span>Compute!</span>
+    <span>Data Visualization!</span>
     <i class="fas fa-arrow-right"></i>
   </a>
-</div>
+  </div>
 {% endblock %}

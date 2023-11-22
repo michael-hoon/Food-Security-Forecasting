@@ -13,7 +13,7 @@ html_layout = """
             <header>
               <div class="nav-wrapper">
                 <a href="/">
-                    <h1>FSP-inator</h1>
+                    <h1>FIP-inator</h1>
                   </a>
                 <nav>
                 </nav>

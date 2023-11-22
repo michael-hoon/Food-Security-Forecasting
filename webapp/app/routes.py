@@ -40,3 +40,9 @@ def home():
         body="",
         form = form
     )
+
+@app.route('/data', methods = ['GET'])
+def data():
+    return render_template(
+        'my_report.html'
+    )

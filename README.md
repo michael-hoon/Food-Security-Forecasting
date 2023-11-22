@@ -30,6 +30,7 @@ Our application is built on Flask with Jinja Templating.
 ## Requirements
 - cloned repo
 - `python3`
+- Dependencies in `requirements.txt`
 
 ## Steps for Linux/MacOS Users
 1. Downloading requirements

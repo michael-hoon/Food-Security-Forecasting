@@ -22,7 +22,7 @@ Exploratory Data Analysis on Global food security indicators: A comprehensive st
 2. [Food and Agriculture Organisation](https://www.fao.org/faostat/en/)
 3. [Kaggle](https://www.kaggle.com/datasets)
 
-# :computer: Install guide for Online Web Application
+# :computer: Install guide for Web Application
 Aside from our Jupyter Notebook, we have also developed a user-friendly web-application for all governmental organisations around the world to use, and to determine the most significant factors of influence for Food Insecurity Index for their country. 
 
 Our application is built on Flask with Jinja Templating.
@@ -31,6 +31,7 @@ Our application is built on Flask with Jinja Templating.
 - Cloned Repository using `git clone https://github.com/michael-hoon/Food-Security-Forecasting.git`
 - `python3`
 - Dependencies in `requirements.txt`
+- Change Directory to the downloaded folder. Once inside, run `cd webapp` and follow the steps below. 
 
 ## Steps for Linux/MacOS Users
 1. Downloading requirements
@@ -58,5 +59,5 @@ flask run
 
 ## Steps to use Web Application
 1. Enter the relevant quantitative factors for your country
-2. Press 'Compute'
+2. Press the 'Predict' button!
 3. The Website will now predict the value for your country's 'Prevalence of Moderate to Severe Food Insecurity' value. A higher value signifies higher risk of food insecurity in your country, vice versa.

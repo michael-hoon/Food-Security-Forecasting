@@ -33,7 +33,7 @@ Our application is built on Flask with Jinja Templating.
 - Dependencies in `requirements.txt`
 - Change Directory to the downloaded folder. Once inside, run `cd webapp` and follow the steps below. 
 
-## Steps for Linux/MacOS Users (if on Mac, 
+## Steps for Linux/MacOS Users (Serious coders)
 1. Downloading requirements
 ```sh
 chmod +x setup.sh
@@ -45,7 +45,7 @@ chmod +x startup.sh
 ./startup.sh
 ```
 
-## Steps for Windows Users
+## Steps for Windows Users (or install linux and go linux tab)
 
 1. Downloading requirements
 ```sh

@@ -6,9 +6,9 @@ import pandas as pd
 class InputVariables(FlaskForm):
     data = 'data/2Ddataset.xlsx'
     df = pd.read_excel(data)
-    population = StringField('Population', validators=[DataRequired()])
-    infant_mortality = StringField('Infant Mortality', validators=[DataRequired()])
-    hdi = StringField('Human Development Index', validators=[DataRequired()])
-    gini_index = StringField("Gini's Index", validators=[DataRequired()])
-    temperature = StringField('Temperature', validators=[DataRequired()])
+    population = FloatField('Population', validators=[DataRequired()])
+    infant_mortality = FloatField('Infant Mortality (in %)', validators=[DataRequired()])
+    hdi = FloatField('Human Development Index (from 0 to 1)', validators=[DataRequired()])
+    gini_index = FloatField("Gini's Index (from 0 to 100)", validators=[DataRequired()])
+    temperature = FloatField('Temperature (in °C)', validators=[DataRequired()])
     submit = SubmitField('Calculate Food Insecurity')

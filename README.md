@@ -65,4 +65,4 @@ flask run
 3. The Website will now predict the value for your country's 'Prevalence of Moderate to Severe Food Insecurity' value. A higher value signifies higher risk of food insecurity in your country, vice versa.
 
 ## For Gen-Z, here is your reward for reaching the end
-![Surfer my sub]([https://giphy.com/embed/Fr5LA2RCQbnVp74CxH](https://media4.giphy.com/media/Fr5LA2RCQbnVp74CxH/giphy.gif?cid=ecf05e47yf8pgay4q2d2zm99b6panw1vkl0y62wnv4nk5848&ep=v1_gifs_search&rid=giphy.gif&ct=g)https://media4.giphy.com/media/Fr5LA2RCQbnVp74CxH/giphy.gif?cid=ecf05e47yf8pgay4q2d2zm99b6panw1vkl0y62wnv4nk5848&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+![](https://media.giphy.com/media/Fr5LA2RCQbnVp74CxH/giphy.gif)
